@@ -668,6 +668,11 @@ hr {
 }
 
 
+/* Logos */
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
