@@ -611,6 +611,10 @@ hr {
 }
 
 .reviews__photo {
+    display: block;
+    width: 210px;
+    height: 210px;
+
     border: 2px solid #95e1d3;
     border-radius: 50%;
 
@@ -714,6 +718,18 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 -15px;
+}
+
+.logos__item {
+    padding: 0 15px;
+}
+
+.logos__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 
@@ -742,6 +758,8 @@ hr {
 
 .works__image {
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity .2s linear;
 }
 
@@ -784,7 +802,7 @@ hr {
     margin-top: 70px;
 }
 
-.clients--item {
+.clients__item {
     width: 50%;
     padding: 0 45px 0 175px;
     position: relative;
@@ -1188,6 +1206,11 @@ hr {
     .intro__title {
         font-size: 120px;
     }
+    
+    /* Reviews */
+    .reviews__text {
+        font-size: 20px;
+    }
 
 }
 
@@ -1228,6 +1251,37 @@ hr {
 
     .services__item--border {
         border-bottom: 0;
+    }
+
+
+    /* Reviews */
+    .reviews {
+        padding: 0 60px;
+    }
+    
+    .reviews__photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .reviews__item {
+        padding-left: 175px;
+    }
+
+
+    /* Clients */
+    .clients {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .clients__item {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .clients__item:last-child {
+        margin-bottom: 0;
     }
 
 }
@@ -1304,6 +1358,35 @@ hr {
     }
     
 
+    /* Reviews */
+    .reviews__photo {
+        position: static;
+        margin: 0 auto 20px;
+    }
+
+    .reviews__item {
+        padding-left: 0;
+    }
+
+    .reviews__text {
+        font-size: 16px;
+    }
+
+    .reviews__author {
+        font-size: 20px;
+    }
+
+
+    /* Works */
+    .works {
+        flex-wrap: wrap;
+    }
+
+    .works__col {
+        flex: none;
+        width: 50%;
+    }
+
 }
 
 
@@ -1360,6 +1443,53 @@ hr {
         width: 180px;
         bottom: -50px;
         right: -80px;
+    }
+
+
+    /* Reviews */
+    .reviews {
+        padding: 0;
+    }
+
+    .reviews__btn {
+        top: 18%;
+    }
+
+
+    /* Logos */
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logos__item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .logos__img {
+        margin: 0 auto;
+    }
+
+
+    /* Works */
+    .works__col {
+        width: 100%;
+    }
+
+
+    /* Clients */
+    .clients__photo {
+        position: static;
+    }
+
+    .clients__item {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .clients__text:before {
+        margin: 15px auto;
     }
 
 }
