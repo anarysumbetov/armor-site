@@ -27,6 +27,13 @@ hr {
     background-color: #e5e5e5;
 }
 
+
+/* Page */
+.page {
+    overflow: hidden;
+}
+
+
 /* Container */
 .container {
     width: 100%;
@@ -855,6 +862,7 @@ hr {
 
 .blog {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -986,8 +994,14 @@ hr {
 
 .footer__inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 -15px;
     padding-bottom: 65px;
+}
+
+.footer__col {
+    padding: 0 15px;
 }
 
 .footer__col--first {
@@ -1108,11 +1122,13 @@ hr {
 }
 
 .instagram__item {
-    width: 32.33333%;
+    width: 33%;
     border-bottom: 1px solid #fff;
 }
 .instagram__item img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -1284,6 +1300,31 @@ hr {
         margin-bottom: 0;
     }
 
+
+    /* Footer */
+    .footer__col--first {
+        width: 100%;
+    }
+
+    .footer__col--second {
+        width: 50%;
+    }
+
+    .footer__col--third {
+        width: 50%;
+    }
+
+
+    /* Instagram */
+    .instagram {
+        justify-content: flex-start;
+    }
+
+    .instagram__item {
+        width: auto;
+        border-right: 1px solid white;
+    }
+
 }
 
 @media (max-width: 770px) {
@@ -1385,6 +1426,32 @@ hr {
     .works__col {
         flex: none;
         width: 50%;
+    }
+
+
+    /* Blog */
+    .blog {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .blog__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .blog__item:last-child {
+        margin-bottom: 0;
+    }
+
+
+    /* Footer */
+    .footer__col--second {
+        width: 100%;
+    }
+
+    .footer__col--third {
+        width: 100%;
     }
 
 }
@@ -1490,6 +1557,34 @@ hr {
 
     .clients__text:before {
         margin: 15px auto;
+    }
+
+
+    /* Blogs */
+    .blogs__img {
+        width: 80px;
+        height: 50px;
+    }
+
+    .blogs__title {
+        font-size: 10px;
+    }
+
+
+    /* Subscribe */
+    .subscribe {
+        flex-wrap: wrap;
+        max-width: none;
+    }
+
+    .subscribe__input {
+        margin-bottom: 10px;
+        border-right: 1px solid #e7e7e7;
+    }
+
+    .subscribe__input,
+    .subscribe__btn {
+        width: 100%;
     }
 
 }
